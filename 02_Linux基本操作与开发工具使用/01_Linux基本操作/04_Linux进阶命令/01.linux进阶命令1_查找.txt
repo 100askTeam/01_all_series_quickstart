@@ -1,0 +1,138 @@
+find
+目的：查找符合条件的文件
+
+1）在那些目录中查找
+2）查找的内容
+
+格式：  find    目录名    选项    查找条件
+
+举例：
+1）find /work/001_linux_basic/dira/  -name "test1.txt"
+说明:
+	a)/work/001_linux_basic/dira/指明了查找的路径
+	b)-name表明以名字来查找文件
+	c)"test1.txt"，就指明查找名为test1.txt的文件
+同理：
+	find /work/001_linux_basic/dira/  -name "*.txt"	
+	查找指定目录下面所以以.txt结尾的文件，其中*是通配符。
+	find /work/001_linux_basic  -name "dira"	
+	查找指定目录下面是否存在dira这个目录，dira是目录名。
+
+注意：
+1）如果没有指定查找目录，则为当前目录。
+	find . -name "*.txt"   其中.代表当前路径 
+	find  -name "*.txt"
+	都是一样的功能
+	
+2）find还有一些高级的用法，如查找最近几天(几个小时)之内(之前)有变动的文件
+ find /home -mtime -2  查找/home目录下两天内有变动的文件	
+
+	
+grep
+目的：使用grep命令来查找文件中符合条件的字符串
+格式：grep  [选项]	 [查找模式]  [文件名]
+
+将dira目录的test1.txt和dirb目录的test1.txt都含有如下内容：
+aaa
+AAAAAA
+abc
+abcabcabc
+cbacbacba 
+match_pattern
+nand->erase
+
+	
+查找字符串时希望显示如下内容：
+1）所在的文件名----grep查找时默认已经显示目标文件名
+2）所在的行号------使用-n选项
+
+grep -rn "字符串"  文件名
+r(recursive)：递归查找
+n(number)：显示目标位置的行号
+字符串:要查找的字符串
+文件名:要查找的目标文件，如果是*则表示查找当前目录下的所有文件和目录	
+
+举例：
+	grep -n "abc" test1.txt   在test1.txt中查找字符串abc
+	grep -rn "abc" *          在当前目录递归查找字符串abc
+	
+注意：
+1）可以加入-w全字匹配。
+	
+ 
+	
+	
+	
+	
+
+
+
+file
+目的：识别文件类型
+格式： file   文件名
+
+linux下一切皆文件
+
+举例：
+file ~/.bashrc     为ASCII 编码的text类型
+file ~/.vimrc      为UTF-8 Unicode 编码的text类型
+file ~/Pictures/*  如图形文件JPEG/PNG/BMP格式
+file ~/100ask/     为directory表明这是一个目录
+file /bin/pwd      出现 ELF 64-bit LSB executable，即为ELF格式的可执行文件
+file /dev/*        出现character special(字符设备文件)、 block special(块设备文件)等
+
+
+ 
+ 
+
+
+which和whereis
+目的：查找命令或应用程序的所在位置
+格式：which  命令名/应用程序名
+
+在终端上执行pwd实际上是去执行了/bin/pwd
+举例：
+	which pwd 定位到/bin/pwd
+	which gcc 定位到/usr/bin/gcc
+	whereis  pwd查找到可执行程序的位置/bin/pwd和手册页的位置/usr/share/man/man1/pwd.1.gz
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
