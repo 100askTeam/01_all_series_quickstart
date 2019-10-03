@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0
+Debug|Win32|G:\01_all_series_quickstart\04_快速入门(正式开始)\01_嵌入式Linux应用开发基础知识\source\03_test_Makefile_visual_studio_2019\main\|
