@@ -7,7 +7,7 @@
 # 注意: 不同的开发板不同的编译器上述3个环境变量不一定相同,
 #       请参考各开发板的高级用户使用手册
 
-KERN_DIR = /home/book/100ask_roc-rk3399-pc/linux-4.4
+KERN_DIR = /home/book/100ask_firefly-rk3288/linux-4.4
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
@@ -24,5 +24,5 @@ clean:
 # obj-m += ab.o
 
 # leddrv.c board_demo.c 编译成 100ask.ko
-100ask_led-y := leddrv.o board_rk3399.o
+100ask_led-y := leddrv.o board_rk3288.o
 obj-m	+= 100ask_led.o
