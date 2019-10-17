@@ -24,5 +24,5 @@ clean:
 # obj-m += ab.o
 
 # leddrv.c board_demo.c 编译成 100ask.ko
-100ask_led-y := leddrv.o board_rk3399.o
+100ask_led-y := leddrv.o board_demo.o
 obj-m	+= 100ask_led.o
