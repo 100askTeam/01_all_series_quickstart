@@ -1,4 +1,4 @@
-#include <linux/module.h>
+﻿#include <linux/module.h>
 
 #include <linux/fs.h>
 #include <linux/errno.h>
@@ -19,7 +19,7 @@
 #include "led_opr.h"
 
 static volatile unsigned int *CM_PER_GPIO1_CLKCTRL;
-static volatile unsigned int *conf_gpmc_ad0;
+static volatile unsigned int *conf_gpmc_a0;
 static volatile unsigned int *GPIO1_OE;
 static volatile unsigned int *GPIO1_CLEARDATAOUT;
 static volatile unsigned int *GPIO1_SETDATAOUT;
@@ -31,7 +31,7 @@ static int board_demo_led_init (int which) /* 初始化LED, which-哪个LED */
 		if (!CM_PER_GPIO1_CLKCTRL)
 		{
 			CM_PER_GPIO1_CLKCTRL = ioremap(0x44E00000 + 0xAC, 4);
-			conf_gpmc_ad0 = ioremap(0x44E10000 + 0x800, 4);
+			conf_gpmc_a0 = ioremap(0x44E10000 + 0x840, 4);
 			GPIO1_OE = ioremap(0x4804C000 + 0x134, 4);
 			GPIO1_CLEARDATAOUT = ioremap(0x4804C000 + 0x190, 4);
 			GPIO1_SETDATAOUT = ioremap(0x4804C000 + 0x194, 4);
@@ -51,7 +51,7 @@ static int board_demo_led_init (int which) /* 初始化LED, which-哪个LED */
 		 * addr : 0x44E10000 + 0x800
 		 * val	: 7
 		 */
-		*conf_gpmc_ad0 = 7;
+		*conf_gpmc_a0 = 7;
 		
 		/* c. 设置GPIO1_16的方向，让它作为输出引脚
 		 * set GPIO1's registers , to set GPIO1_16'S dir (output) 
