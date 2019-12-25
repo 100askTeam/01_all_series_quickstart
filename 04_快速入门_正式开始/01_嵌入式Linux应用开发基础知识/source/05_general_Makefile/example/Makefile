@@ -39,7 +39,7 @@ start_recursive_build:
 	make -C ./ -f $(TOPDIR)/Makefile.build
 
 $(TARGET) : built-in.o
-	$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
+	$(CC) -o $(TARGET) built-in.o $(LDFLAGS)
 
 clean:
 	rm -f $(shell find -name "*.o")
