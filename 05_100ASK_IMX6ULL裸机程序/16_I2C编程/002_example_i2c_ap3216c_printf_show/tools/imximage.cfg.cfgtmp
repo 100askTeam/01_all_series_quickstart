@@ -1,0 +1,115 @@
+# 1 "board/freescale/mx6ullevk/imximage.cfg"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "././include/linux/kconfig.h" 1
+
+
+
+# 1 "include/generated/autoconf.h" 1
+# 5 "././include/linux/kconfig.h" 2
+# 1 "<command-line>" 2
+# 1 "board/freescale/mx6ullevk/imximage.cfg"
+# 14 "board/freescale/mx6ullevk/imximage.cfg"
+# 1 "include/config.h" 1
+
+
+
+# 1 "include/config_defaults.h" 1
+# 5 "include/config.h" 2
+# 1 "include/config_uncmd_spl.h" 1
+# 6 "include/config.h" 2
+# 1 "include/configs/mx6ullevk.h" 1
+# 13 "include/configs/mx6ullevk.h"
+# 1 "./arch/arm/include/asm/arch/imx-regs.h" 1
+# 413 "./arch/arm/include/asm/arch/imx-regs.h"
+# 1 "./arch/arm/include/asm/imx-common/regs-lcdif.h" 1
+# 414 "./arch/arm/include/asm/arch/imx-regs.h" 2
+# 14 "include/configs/mx6ullevk.h" 2
+# 1 "include/linux/sizes.h" 1
+# 15 "include/configs/mx6ullevk.h" 2
+# 1 "include/configs/mx6_common.h" 1
+# 47 "include/configs/mx6_common.h"
+# 1 "./arch/arm/include/asm/imx-common/gpio.h" 1
+# 48 "include/configs/mx6_common.h" 2
+# 16 "include/configs/mx6ullevk.h" 2
+# 7 "include/config.h" 2
+# 1 "./arch/arm/include/asm/config.h" 1
+# 8 "include/config.h" 2
+# 1 "include/linux/kconfig.h" 1
+# 9 "include/config.h" 2
+# 1 "include/config_fallbacks.h" 1
+# 9 "include/config.h" 2
+# 15 "board/freescale/mx6ullevk/imximage.cfg" 2
+
+
+
+IMAGE_VERSION 2
+# 30 "board/freescale/mx6ullevk/imximage.cfg"
+BOOT_FROM sd
+# 55 "board/freescale/mx6ullevk/imximage.cfg"
+DATA 4 0x020c4068 0xffffffff
+DATA 4 0x020c406c 0xffffffff
+DATA 4 0x020c4070 0xffffffff
+DATA 4 0x020c4074 0xffffffff
+DATA 4 0x020c4078 0xffffffff
+DATA 4 0x020c407c 0xffffffff
+DATA 4 0x020c4080 0xffffffff
+
+
+
+
+
+
+DATA 4 0x020E04B4 0x000C0000
+DATA 4 0x020E04AC 0x00000000
+DATA 4 0x020E027C 0x00000030
+DATA 4 0x020E0250 0x00000030
+DATA 4 0x020E024C 0x00000030
+DATA 4 0x020E0490 0x00000030
+DATA 4 0x020E0288 0x000C0030
+DATA 4 0x020E0270 0x00000000
+DATA 4 0x020E0260 0x00000030
+DATA 4 0x020E0264 0x00000030
+DATA 4 0x020E04A0 0x00000030
+DATA 4 0x020E0494 0x00020000
+DATA 4 0x020E0280 0x00000030
+DATA 4 0x020E0284 0x00000030
+DATA 4 0x020E04B0 0x00020000
+DATA 4 0x020E0498 0x00000030
+DATA 4 0x020E04A4 0x00000030
+DATA 4 0x020E0244 0x00000030
+DATA 4 0x020E0248 0x00000030
+DATA 4 0x021B001C 0x00008000
+DATA 4 0x021B0800 0xA1390003
+DATA 4 0x021B080C 0x00000004
+DATA 4 0x021B083C 0x41640158
+DATA 4 0x021B0848 0x40403237
+DATA 4 0x021B0850 0x40403C33
+DATA 4 0x021B081C 0x33333333
+DATA 4 0x021B0820 0x33333333
+DATA 4 0x021B082C 0xf3333333
+DATA 4 0x021B0830 0xf3333333
+DATA 4 0x021B08C0 0x00944009
+DATA 4 0x021B08b8 0x00000800
+DATA 4 0x021B0004 0x0002002D
+DATA 4 0x021B0008 0x1B333030
+DATA 4 0x021B000C 0x676B52F3
+DATA 4 0x021B0010 0xB66D0B63
+DATA 4 0x021B0014 0x01FF00DB
+DATA 4 0x021B0018 0x00201740
+DATA 4 0x021B001C 0x00008000
+DATA 4 0x021B002C 0x000026D2
+DATA 4 0x021B0030 0x006B1023
+DATA 4 0x021B0040 0x0000004F
+DATA 4 0x021B0000 0x84180000
+DATA 4 0x021B0890 0x00400000
+DATA 4 0x021B001C 0x02008032
+DATA 4 0x021B001C 0x00008033
+DATA 4 0x021B001C 0x00048031
+DATA 4 0x021B001C 0x15208030
+DATA 4 0x021B001C 0x04008040
+DATA 4 0x021B0020 0x00000800
+DATA 4 0x021B0818 0x00000227
+DATA 4 0x021B0004 0x0002552D
+DATA 4 0x021B0404 0x00011006
+DATA 4 0x021B001C 0x00000000
