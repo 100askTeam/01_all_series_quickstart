@@ -13,7 +13,7 @@ _start:
 	ldr r2, =data_end 	     /* data段结束地址(重定位后地址 0x90....) */
 	sub r2, r2, r1			 /* r2的值为data段的长度 */	
 
-	bl copy_data			 /* 跳转到函数copy_data并将r1,r2,r3作为函数参数传入 */
+	bl copy_data			 /* 跳转到函数copy_data并将r0,r1,r2作为函数参数传入 */
 
 	/* 清除bss段 */
 	ldr r0, =__bss_start	
