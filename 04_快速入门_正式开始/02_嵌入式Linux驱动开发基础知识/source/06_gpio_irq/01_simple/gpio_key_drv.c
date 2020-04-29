@@ -143,6 +143,8 @@ static void __exit gpio_key_exit(void)
 }
 
 
+/* 7. 其他完善：提供设备信息，自动创建设备节点                                     */
+
 module_init(gpio_key_init);
 module_exit(gpio_key_exit);
 
