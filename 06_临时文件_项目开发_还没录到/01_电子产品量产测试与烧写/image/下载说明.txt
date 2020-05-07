@@ -1,0 +1,19 @@
+sdcard_rootfs.tar.bz2
+u-boot-dtb.imx
+sdcard.img
+
+这些文件太大了，无法上传到GIT。
+
+可以去百度网盘下载,
+方法如下:
+1. 打开 wiki.100ask.net/download
+2. 往下拉找到"【6ull】100ask_imx6ull开发板BSP包", 它是百度网盘的下载链接
+3. 点击进入目录: "02_Images (系统固件)/第1个项目_电子产品量产测试与烧写"
+4. 里面有3个文件:
+sdcard_rootfs.tar.bz2
+u-boot-dtb.imx
+sdcard.img
+5. 把它们转存到你自己的网盘, 再用百度网盘软件下载。
+   建议不要用浏览器直接下载, 容易出错。
+   
+

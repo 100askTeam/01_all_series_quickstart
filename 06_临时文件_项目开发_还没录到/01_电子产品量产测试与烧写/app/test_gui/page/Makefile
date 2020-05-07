@@ -1,0 +1,5 @@
+obj-y += page_manager.o
+obj-y += main_page.o
+#obj-y += camera_page.o
+#obj-y += openjtag_page.o
+#obj-y += serial.o
