@@ -1,8 +1,9 @@
-#include "uart.h"
+﻿#include "uart.h"
 
 
 static volatile unsigned int *IOMUXC_SW_MUX_CTL_PAD_UART1_TX_DATA ;
 static volatile unsigned int *IOMUXC_SW_MUX_CTL_PAD_UART1_RX_DATA	;
+static volatile unsigned int *IOMUXC_UART1_RX_DATA_SELECT_INPUT ;
 /**********************************************************************
  * 函数名称： Uart_Init
  * 功能描述： 初始化UART，就是规定传输格式，设置波特率为115200，配置UART占用的GPIO管脚
@@ -18,8 +19,10 @@ void Uart_Init(void)
 	
 	IOMUXC_SW_MUX_CTL_PAD_UART1_TX_DATA		= (volatile unsigned int *)(0x20E0084);
 	IOMUXC_SW_MUX_CTL_PAD_UART1_RX_DATA		= (volatile unsigned int *)(0x20E0088);
+	IOMUXC_UART1_RX_DATA_SELECT_INPUT		= (volatile unsigned int *)(0x20E0624);
 
 	*IOMUXC_SW_MUX_CTL_PAD_UART1_RX_DATA = 0;
+	*IOMUXC_UART1_RX_DATA_SELECT_INPUT = 3;
 	*IOMUXC_SW_MUX_CTL_PAD_UART1_TX_DATA = 0;
 
 	UART1->UCR1 |= (1 << 0) ;		/*关闭当前串口*/ 
